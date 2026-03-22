@@ -15,7 +15,7 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
@@ -114,21 +114,21 @@
 
     <!-- Profile Image -->
     <div class="flex-shrink-0">
-        <img src="assets/profile.jpg" alt="Shiv Profile"
-            class="w-40 h-40 md:w-52 md:h-52 rounded-full object-cover border-4 border-cyan-500 shadow-lg hover:scale-105 transition duration-300">
+   <img src="assets/profile.jpg" alt="Shiv Profile">
+class="w-72 h-72 md:w-96 md:h-96 rounded-full object-cover border-4 border-cyan-400 shadow-[0_0_35px_rgba(0,255,255,0.6)] hover:scale-110 transition duration-300"
+style="object-position: center 20%;">
     </div>
 
     <!-- Text Content -->
     <div class="space-y-8">
-
-        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight text-white hero-animate" style="animation-delay: 0.1s;">
-            Hi, I'm <span class="accent-text">Shiv Narayan Dwivedi</span>
-        </h1>
-
-        <p class="text-xl sm:text-2xl font-medium text-gray-400 hero-animate" style="animation-delay: 0.3s;">
-            Aspiring Data Scientist • Machine Learning & BI Enthusiast
-        </p>
-
+<h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white">
+    Hi, I'm <span class="accent-text">Shiv Narayan</span><br>
+    <span class="accent-text">Dwivedi</span>
+</h1>
+<p class="text-2xl sm:text-3xl font-semibold tracking-wide">
+    <span id="typing-text" 
+    class="bg-gradient-to-r from-cyan-300 via-blue-400 to-indigo-500 bg-clip-text text-transparent"></span>
+</p>
         <p class="text-md sm:text-lg text-gray-300 max-w-xl hero-animate" style="animation-delay: 0.5s;">
             I’m a passionate third-year B.Tech Computer Science student focused on Machine Learning, Data Analytics, and Business Intelligence.
         </p>
@@ -170,18 +170,27 @@
             </h2>
             
             <div class="max-w-4xl mx-auto bg-[#171717] p-8 md:p-12 rounded-2xl shadow-2xl animated-card">
-                <p class="text-lg mb-6 leading-relaxed text-gray-300">
-                    I am a proactive and curious learner with strong foundational skills in programming, statistics, and data science. I love exploring how data can reveal patterns, support decisions, and solve real-world challenges. My expertise includes Python, SQL, Power BI, Excel dashboards, and machine learning algorithms.
-                </p>
-                <p class="text-lg leading-relaxed text-gray-300">
-                    I continuously enhance my skills through certifications, hands-on projects, hackathons, and self-learning. Currently, I am focused on building ML models, creating BI dashboards, and understanding how technology, data, and business work together.
-                </p>
-                
-                <div class="mt-8 p-4 bg-fuchsia-900/30 border border-fuchsia-700 rounded-xl text-center">
-                    <p class="text-xl font-semibold text-fuchsia-300">
-                        Open to opportunities in Data Science, ML, BI, Data Analytics, and Python Development
-                    </p>
-                </div>
+               <p class="text-gray-300 leading-relaxed mb-6">
+I am a motivated Computer Science undergraduate with a strong foundation in programming, statistics, and data science. I have hands-on experience in Python, SQL, Power BI, and machine learning, and I enjoy building data-driven solutions that solve real-world problems.
+</p>
+
+<p class="text-gray-300 leading-relaxed mb-6">
+I have worked on multiple projects involving data analysis, predictive modeling, and dashboard development. I am continuously improving my skills through practical implementation, certifications, and self-learning, with a focus on applying data and technology to drive meaningful insights.
+</p>
+
+<div class="mt-10 flex justify-center">
+    <div class="px-8 py-4 rounded-xl bg-gradient-to-r from-[#0f172a] via-[#111827] to-[#0f172a] border border-gray-700 shadow-lg hover:shadow-cyan-500/20 transition duration-300">
+        
+        <p class="text-lg sm:text-xl font-semibold tracking-wide text-center text-gray-200">
+            Open to opportunities in 
+            <span class="text-cyan-400">Data Science</span>, 
+            <span class="text-blue-400">Machine Learning</span>, 
+            <span class="text-indigo-400">Data Analytics</span>, 
+            and <span class="text-purple-400">Business Intelligence</span>
+        </p>
+
+    </div>
+</div>
             </div>
         </section>
 
@@ -339,138 +348,129 @@
         <!-- Separator -->
         <hr class="border-gray-800 max-w-4xl mx-auto my-16">
 
-        <!-- 5. Projects Section -->
-        <section id="projects" class="py-16">
-            <h2 class="text-4xl font-bold text-center mb-12 text-white">
-                <i data-lucide="rocket" class="section-heading-icon accent-text"></i> Major Projects
-            </h2>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
-                
-                <!-- Project Card 1: Library Book Management System -->
-                <div class="project-card bg-[#171717] p-8 rounded-2xl card-glow shadow-xl">
-                    <h3 class="text-2xl font-bold text-white mb-2">Library Book Management System</h3>
-                    <p class="text-gray-400 mb-4">A fully frontend system demonstrating core DSA principles.</p>
-                    
-                    <ul class="list-disc list-inside space-y-1 text-gray-300 ml-4">
-                        <li>Login, Add/Update/Delete books functionality.</li>
-                        <li>Issue/Return mechanism implemented via **Queue** logic.</li>
-                        <li>Internal data structure uses **Linked List** logic for book storage.</li>
-                        <li>Fully implemented on the frontend (HTML, CSS, JS).</li>
-                    </ul>
-                    
-                    <p class="mt-4 text-sm font-semibold text-fuchsia-400">Learning: Applied DSA in real project</p>
-                    
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <span class="tool-tag">HTML</span>
-                        <span class="tool-tag">CSS</span>
-                        <span class="tool-tag">JS</span>
-                        <span class="tool-tag">DSA</span>
-                    </div>
-                </div>
+    <!-- 5. Projects Section -->
+<section id="projects" class="py-16">
+    <h2 class="text-4xl font-bold text-center mb-12 text-white">
+        <i data-lucide="rocket" class="section-heading-icon accent-text"></i> Major Projects
+    </h2>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
+        
+        <!-- 1. Library Management System -->
+        <div class="project-card bg-[#171717] p-8 rounded-2xl card-glow shadow-xl">
+            <h3 class="text-2xl font-bold text-white mb-2">Library Management System</h3>
 
-                <!-- Project Card 2: Global COVID-19 Visualization Dashboard -->
-                <div class="project-card bg-[#171717] p-8 rounded-2xl card-glow shadow-xl">
-                    <h3 class="text-2xl font-bold text-white mb-2">Global COVID-19 Visualization Dashboard</h3>
-                    <p class="text-gray-400 mb-4">Comprehensive Business Intelligence dashboard for tracking global pandemic data.</p>
-                    
-                    <ul class="list-disc list-inside space-y-1 text-gray-300 ml-4">
-                        <li>Interactive **Slicers** and **PivotTables** for data aggregation.</li>
-                        <li>Utilized **Map charts** for geographical data visualization.</li>
-                        <li>Included **Macros** for automation and **Trendlines** for forecasting.</li>
-                    </ul>
-                    
-                    <p class="mt-4 text-sm font-semibold text-fuchsia-400">Learning: Data storytelling, BI, analytics</p>
-                    
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <span class="tool-tag">Excel BI Dashboard</span>
-                        <span class="tool-tag">PivotTables</span>
-                        <span class="tool-tag">Macros</span>
-                    </div>
-                </div>
+            <p class="text-gray-400 mb-4">
+            A frontend-based Library Management System designed to demonstrate core Data Structures concepts. 
+            It supports book operations such as add, update, delete, and implements issue/return logic using queues. 
+            Data is managed using linked list concepts to simulate real-world workflows.
+            </p>
 
-                <!-- Project Card 3: Mobile Phone Feature & Price Analysis -->
-                <div class="project-card bg-[#171717] p-8 rounded-2xl card-glow shadow-xl">
-                    <h3 class="text-2xl font-bold text-white mb-2">Mobile Phone Feature & Price Analysis</h3>
-                    <p class="text-gray-400 mb-4">Machine Learning project to predict phone prices based on features.</p>
-                    
-                    <ul class="list-disc list-inside space-y-1 text-gray-300 ml-4">
-                        <li>Detailed feature analysis and correlation studies.</li>
-                        <li>Implemented ML model for price prediction with evaluation metrics.</li>
-                        <li>Insights: Specs strongly influence price, brand factors, consumer behavior.</li>
-                    </ul>
-                    
-                    <p class="mt-4 text-sm font-semibold text-fuchsia-400">Learning: Feature analysis, ML pipeline, model training</p>
-                    
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <span class="tool-tag">Python</span>
-                        <span class="tool-tag">Machine Learning</span>
-                        <span class="tool-tag">Scikit-learn</span>
-                    </div>
-                </div>
-
-                <!-- Project Card 4: Medicine Reminder & AI Chatbot -->
-                <div class="project-card bg-[#171717] p-8 rounded-2xl card-glow shadow-xl">
-                    <h3 class="text-2xl font-bold text-white mb-2">Medicine Reminder & AI Chatbot</h3>
-                    <p class="text-gray-400 mb-4">A practical web application integrating conversational AI and utility features.</p>
-                    
-                    <ul class="list-disc list-inside space-y-1 text-gray-300 ml-4">
-                        <li>User-configurable reminders for medication.</li>
-                        <li>Interactive AI chat functionality powered by the **Gemini API**.</li>
-                        <li>Supports voice input and provides specific medicine information.</li>
-                        <li>Includes a smooth typing animation for AI responses.</li>
-                    </ul>
-                    
-                    <p class="mt-4 text-sm font-semibold text-fuchsia-400">Learning: API integration, conversational design, web utility</p>
-                    
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <span class="tool-tag">HTML/CSS/JS</span>
-                        <span class="tool-tag">Gemini API</span>
-                        <span class="tool-tag">Voice Input</span>
-                    </div>
-                </div>
-
-                <!-- Project Card 5: House Price Prediction -->
-                <div class="project-card bg-[#171717] p-8 rounded-2xl card-glow shadow-xl">
-                    <h3 class="text-2xl font-bold text-white mb-2">House Price Prediction</h3>
-                    <p class="text-gray-400 mb-4">Machine Learning Regression project to predict housing prices.</p>
-                    
-                    <ul class="list-disc list-inside space-y-1 text-gray-300 ml-4">
-                        <li>Built and evaluated regression models (Linear, Ridge, Lasso).</li>
-                        <li>Extensive data preprocessing and feature engineering performed.</li>
-                        <li>Focused on improving model accuracy through iterative refinement.</li>
-                    </ul>
-                    
-                    <p class="mt-4 text-sm font-semibold text-fuchsia-400">Concepts: Regression, Data Preprocessing, Feature Engineering</p>
-                    
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <span class="tool-tag">Scikit-learn</span>
-                        <span class="tool-tag">Pandas</span>
-                        <span class="tool-tag">Regression</span>
-                    </div>
-                </div>
-
-                <!-- Project Card 6: Customer Churn Prediction -->
-                <div class="project-card bg-[#171717] p-8 rounded-2xl card-glow shadow-xl">
-                    <h3 class="text-2xl font-bold text-white mb-2">Customer Churn Prediction</h3>
-                    <p class="text-gray-400 mb-4">Machine Learning Classification project to predict customer attrition.</p>
-                    
-                    <ul class="list-disc list-inside space-y-1 text-gray-300 ml-4">
-                        <li>Developed and optimized a classification model (Logistic Regression, Decision Trees).</li>
-                        <li>In-depth analysis of feature importance to identify key churn drivers.</li>
-                        <li>Model deployed to provide actionable insights for business retention strategies.</li>
-                    </ul>
-                    
-                    <p class="mt-4 text-sm font-semibold text-fuchsia-400">Concepts: Classification, Feature Importance, Business Intelligence</p>
-                    
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <span class="tool-tag">Classification</span>
-                        <span class="tool-tag">Scikit-learn</span>
-                        <span class="tool-tag">Feature Importance</span>
-                    </div>
-                </div>
-
+            <div class="mt-4 space-x-4">
+                <a href="https://shivnarayan0099.github.io/Library-Management-System/" target="_blank"
+                   class="bg-cyan-600 px-4 py-2 rounded-lg text-white hover:bg-cyan-500">
+                  View Project
+                </a>
+                 
             </div>
+        </div>
+
+        <!-- 2. COVID Dashboard -->
+        <div class="project-card bg-[#171717] p-8 rounded-2xl card-glow shadow-xl">
+            <h3 class="text-2xl font-bold text-white mb-2">COVID-19 Visualization Dashboard</h3>
+
+            <p class="text-gray-400 mb-4">
+            An interactive BI dashboard built to analyze global COVID-19 trends using Excel. 
+            Features include PivotTables, slicers, map visualizations, and automation with macros. 
+            It enables dynamic insights and effective data storytelling.
+            </p>
+
+            <a href="https://github.com/Shivnarayan0099/covid19-visualization-dashboard" target="_blank"
+               class="bg-cyan-600 px-4 py-2 rounded-lg text-white hover:bg-cyan-500">
+               View Project
+            </a>
+        </div>
+
+        <!-- 3. Mobile Price Analysis -->
+        <div class="project-card bg-[#171717] p-8 rounded-2xl card-glow shadow-xl">
+            <h3 class="text-2xl font-bold text-white mb-2">Mobile Phone Price Analysis</h3>
+
+            <p class="text-gray-400 mb-4">
+            A Machine Learning project that analyzes mobile specifications and predicts pricing. 
+            Includes feature engineering, correlation analysis, and regression modeling. 
+            Demonstrates how product features influence market pricing.
+            </p>
+
+            <a href="https://github.com/Shivnarayan0099/Mobile-Phone-Specifications---Exploratory-Data-Analysis-EDA-" target="_blank"
+               class="bg-cyan-600 px-4 py-2 rounded-lg text-white hover:bg-cyan-500">
+               View Project
+            </a>
+        </div>
+
+        <!-- 4. Medicine Reminder -->
+        <div class="project-card bg-[#171717] p-8 rounded-2xl card-glow shadow-xl">
+            <h3 class="text-2xl font-bold text-white mb-2">Medicine Reminder & AI Chatbot</h3>
+
+            <p class="text-gray-400 mb-4">
+            A web-based application integrating AI chatbot functionality with a medicine reminder system. 
+            Supports voice input, real-time interaction, and provides medicine-related assistance using API integration. 
+            Designed for practical healthcare utility.
+            </p>
+
+            <a href="https://shivnarayan0099.github.io/Medicine-Reminder-/" target="_blank"
+               class="bg-cyan-600 px-4 py-2 rounded-lg text-white hover:bg-cyan-500">
+              View Project
+            </a>
+        </div>
+
+        <!-- 5. Customer Churn -->
+        <div class="project-card bg-[#171717] p-8 rounded-2xl card-glow shadow-xl">
+            <h3 class="text-2xl font-bold text-white mb-2">Customer Churn Prediction</h3>
+
+            <p class="text-gray-400 mb-4">
+            A classification-based Machine Learning model to predict customer churn. 
+            Includes data preprocessing, feature selection, and model evaluation using Logistic Regression and Decision Trees. 
+            Helps businesses improve retention strategies.
+            </p>
+
+            <a href="https://github.com/Shivnarayan0099/customer-churn-prediction" target="_blank"
+               class="bg-cyan-600 px-4 py-2 rounded-lg text-white hover:bg-cyan-500">
+               View Project
+            </a>
+        </div>
+
+        <!-- 6. Pharmacy System -->
+        <div class="project-card bg-[#171717] p-8 rounded-2xl card-glow shadow-xl">
+            <h3 class="text-2xl font-bold text-white mb-2">Pharmacy Management System</h3>
+
+            <p class="text-gray-400 mb-4">
+            A system designed to manage pharmaceutical operations including inventory tracking, billing, and record management. 
+            Focuses on improving efficiency and reducing manual errors in medical store workflows.
+            </p>
+
+            <a href="https://github.com/Shivnarayan0099/Pharmancy-Management-System" target="_blank"
+               class="bg-cyan-600 px-4 py-2 rounded-lg text-white hover:bg-cyan-500">
+               View Project
+            </a>
+        </div>
+
+        <!-- 7. Amazon Dashboard -->
+        <div class="project-card bg-[#171717] p-8 rounded-2xl card-glow shadow-xl">
+            <h3 class="text-2xl font-bold text-white mb-2">Amazon E-commerce Dashboard</h3>
+
+            <p class="text-gray-400 mb-4">
+            A data analytics dashboard that visualizes e-commerce trends such as sales, revenue, and customer behavior. 
+            Built using BI tools to generate actionable insights for business decision-making.
+            </p>
+
+            <a href="https://github.com/Shivnarayan0099/Amazon-Ecommerce-Dashboard" target="_blank"
+               class="bg-cyan-600 px-4 py-2 rounded-lg text-white hover:bg-cyan-500">
+               View Project
+            </a>
+        </div>
+
+    </div>
+
 
             <style>
                 .tool-tag {
@@ -595,7 +595,38 @@
                 </div>
             </div>
         </section>
+<section id="contact" class="py-20">
+    <h2 class="text-4xl font-bold text-center mb-12 text-white flex items-center justify-center gap-3">
+    <i data-lucide="mail" class="text-cyan-400"></i>
+    Send a Message
+</h2>
 
+    <div class="max-w-3xl mx-auto bg-[#121212] p-8 rounded-2xl shadow-xl border border-gray-800">
+
+        <form action="https://formspree.io/f/xbdzvrye" method="POST" class="space-y-6">
+
+            <!-- Name -->
+            <input type="text" name="name" placeholder="Your Name" required
+                class="w-full p-3 rounded-lg bg-[#1a1a1a] border border-gray-700 text-white focus:border-cyan-400 outline-none">
+
+            <!-- Email -->
+            <input type="email" name="email" placeholder="Your Email" required
+                class="w-full p-3 rounded-lg bg-[#1a1a1a] border border-gray-700 text-white focus:border-cyan-400 outline-none">
+
+            <!-- Message -->
+            <textarea name="message" rows="5" placeholder="Your Message" required
+                class="w-full p-3 rounded-lg bg-[#1a1a1a] border border-gray-700 text-white focus:border-cyan-400 outline-none"></textarea>
+
+            <!-- Button -->
+            <button type="submit"
+                class="w-full bg-cyan-600 text-white py-3 rounded-lg font-semibold hover:bg-cyan-500 hover:shadow-lg transition">
+                Send Message 
+            </button>
+
+        </form>
+
+    </div>
+</section>
     </main>
 
     <footer class="mt-16 py-8 border-t border-gray-800 text-center text-gray-500">
@@ -614,9 +645,22 @@
         // with a direct link to the uploaded PDF file.
         // This allows the browser to handle the download directly.
     </script>
+    <script>
+var typed = new Typed("#typing-text", {
+    strings: [
+        "Aspiring Data Scientist ",
+        "Machine Learning Engineer ",
+        "Data Analyst ",
+        "AI Enthusiast "
+    ],
+    typeSpeed: 60,
+    backSpeed: 40,
+    backDelay: 1500,
+    loop: true
+});
+</script>
 </body>
 
 </html>
-
 
 
