@@ -7,7 +7,7 @@ This project showcases my skills, projects, certifications, and journey as an as
 
 ## 🌐 Live Website
 
-🔗 https://your-username.github.io/repo-name/
+🔗 https://shivnarayan0099.github.io/Shivnarayan-Portfolio/
 
 ---
 
